@@ -1,0 +1,30 @@
+{
+  "name": "transitive-bullshit",
+  "version": "0.0.0",
+  "description": "Shortcut to my personal portfolio site.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4"
+  },
+  "bin": {
+    "transitive-bullshit": "index.js"
+  },
+  "keywords": [
+    "transitive",
+    "bullshit",
+    "travis",
+    "fischer",
+    "portfolio",
+    "react",
+    "npx"
+  ],
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "opn": "^5.4.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
