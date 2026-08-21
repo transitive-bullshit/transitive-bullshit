@@ -25,5 +25,5 @@ export default {
     githubStarPercentile: 99.99
   },
   sideEffects: true
-} as const
+}
 ```
