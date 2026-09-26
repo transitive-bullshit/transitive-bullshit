@@ -1,0 +1,33 @@
+{
+  "name": "transitive-bullshit-profile",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node --import tsx scripts/generate.ts",
+    "test": "pnpm test:types && pnpm test:lint && pnpm test:format && pnpm test:unit",
+    "test:types": "tsc --noEmit",
+    "test:lint": "oxlint",
+    "test:format": "oxfmt --check",
+    "test:unit": "node --import tsx --test scripts/*.test.ts",
+    "fix": "oxfmt"
+  },
+  "devDependencies": {
+    "@fisch0920/config": "^2.2.0",
+    "@primer/octicons": "^19.38.0",
+    "@types/node": "^26.6.2",
+    "@types/primer__octicons": "^19.21.0",
+    "cheerio": "^1.2.0",
+    "oxfmt": "^0.70.0",
+    "oxlint": "^1.85.0",
+    "oxlint-tsgolint": "^7.0.2003",
+    "sharp": "^0.35.4",
+    "takumi-js": "^2.14.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@12.5.1"
+}

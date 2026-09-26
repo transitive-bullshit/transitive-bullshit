@@ -1,0 +1,189 @@
+{
+  "fetchedAt": "2026-09-26T15:21:26.224Z",
+  "repos": {
+    "transitive-bullshit/doom-or-bloom": {
+      "stars": 3,
+      "forks": 0,
+      "contributors": 1,
+      "issues": 0,
+      "pullRequests": 0,
+      "language": "TypeScript",
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-17T10:32:36Z",
+          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/298612418a0560ea1c2f69fc43fcddc76bf4c1cf"
+        },
+        "latestCommit": {
+          "date": "2026-09-26T14:26:39Z",
+          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/38e340427d1f344c11653b64b330fcfca35a16f9"
+        }
+      },
+      "totals": {
+        "commits": 306,
+        "issues": 0,
+        "mergedPullRequests": 5,
+        "latestCommit": {
+          "date": "2026-09-26T14:26:39Z",
+          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/38e340427d1f344c11653b64b330fcfca35a16f9"
+        },
+        "fetchedAt": "2026-09-26T15:52:57.895Z"
+      }
+    },
+    "transitive-bullshit/reading-room": {
+      "stars": 13,
+      "forks": 0,
+      "contributors": 1,
+      "issues": 0,
+      "pullRequests": 0,
+      "language": "TypeScript",
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-08T01:46:03Z",
+          "url": "https://github.com/transitive-bullshit/reading-room/commit/9b444c57509fa59b51ff49b8e7e0915a3d98fcdb"
+        },
+        "latestCommit": {
+          "date": "2026-09-19T07:35:39Z",
+          "url": "https://github.com/transitive-bullshit/reading-room/commit/6d124a574c887ca0d73732fc46a59a833a36826e"
+        }
+      },
+      "totals": {
+        "commits": 8,
+        "issues": 0,
+        "mergedPullRequests": 0,
+        "latestCommit": {
+          "date": "2026-09-19T07:35:39Z",
+          "url": "https://github.com/transitive-bullshit/reading-room/commit/6d124a574c887ca0d73732fc46a59a833a36826e"
+        },
+        "fetchedAt": "2026-09-26T15:52:58.231Z"
+      }
+    },
+    "transitive-bullshit/ai-safety-doom": {
+      "stars": 6,
+      "forks": 1,
+      "contributors": 1,
+      "issues": 1,
+      "pullRequests": 0,
+      "language": "TypeScript",
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-04T23:28:57Z",
+          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/e054fab12998a3d2b4c4909d9ba4837e9be8256c"
+        },
+        "latestCommit": {
+          "date": "2026-09-19T07:44:37Z",
+          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/de99fce98d664c218944ec030859251f26c6bccf"
+        }
+      },
+      "totals": {
+        "commits": 20,
+        "issues": 1,
+        "mergedPullRequests": 0,
+        "latestCommit": {
+          "date": "2026-09-19T07:44:37Z",
+          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/de99fce98d664c218944ec030859251f26c6bccf"
+        },
+        "fetchedAt": "2026-09-26T15:52:58.629Z"
+      }
+    },
+    "transitive-bullshit/cultural-alignment": {
+      "stars": 1,
+      "forks": 0,
+      "contributors": 2,
+      "issues": 12,
+      "pullRequests": 0,
+      "language": "TypeScript",
+      "activity": {
+        "firstCommit": {
+          "date": "2026-08-27T13:03:57Z",
+          "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/b7ea03521fb4ec4ffef1ca9eb8d59affd941addb"
+        },
+        "latestCommit": {
+          "date": "2026-09-26T11:42:32Z",
+          "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/01877bc7072b0a66264b96400f9a12855c81a948"
+        }
+      },
+      "totals": {
+        "commits": 145,
+        "issues": 13,
+        "mergedPullRequests": 9,
+        "latestCommit": {
+          "date": "2026-09-26T11:42:32Z",
+          "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/01877bc7072b0a66264b96400f9a12855c81a948"
+        },
+        "fetchedAt": "2026-09-26T15:52:59.173Z"
+      }
+    },
+    "webtorrent/webtorrent": {
+      "stars": 31420,
+      "forks": 2902,
+      "contributors": 205,
+      "issues": 64,
+      "pullRequests": 17,
+      "language": "JavaScript",
+      "activity": {
+        "firstCommit": {
+          "date": "2014-05-12T08:24:59Z",
+          "url": "https://github.com/webtorrent/webtorrent/commit/776f49e302a307377c86c73d3800aaa600cb5eda"
+        },
+        "latestCommit": {
+          "date": "2014-06-05T00:55:18Z",
+          "url": "https://github.com/webtorrent/webtorrent/commit/a67d87bd03c359614c504ccc959bcda50dd71d85"
+        }
+      }
+    },
+    "transitive-bullshit/agentic": {
+      "stars": 18101,
+      "forks": 2214,
+      "contributors": 142,
+      "issues": 13,
+      "pullRequests": 2,
+      "language": "TypeScript",
+      "activity": {
+        "firstCommit": {
+          "date": "2022-12-02T23:43:59Z",
+          "url": "https://github.com/transitive-bullshit/agentic/commit/a479d1689bc5cf010aac1ccd958940d2ea73babf"
+        },
+        "latestCommit": {
+          "date": "2026-02-11T04:50:00Z",
+          "url": "https://github.com/transitive-bullshit/agentic/commit/beffa8ecfaffcf2e2435b077d5b7cd2dc33298bb"
+        }
+      }
+    },
+    "transitive-bullshit/nextjs-notion-starter-kit": {
+      "stars": 7031,
+      "forks": 5652,
+      "contributors": 30,
+      "issues": 125,
+      "pullRequests": 28,
+      "language": "TypeScript",
+      "activity": {
+        "firstCommit": {
+          "date": "2021-01-15T13:25:47Z",
+          "url": "https://github.com/transitive-bullshit/nextjs-notion-starter-kit/commit/582a8f5e928e4bb75cec57d66051a93811acc138"
+        },
+        "latestCommit": {
+          "date": "2026-09-19T07:37:45Z",
+          "url": "https://github.com/transitive-bullshit/nextjs-notion-starter-kit/commit/048635ef1531becf4e4926c70abca8413e264f3d"
+        }
+      }
+    },
+    "NotionX/react-notion-x": {
+      "stars": 5433,
+      "forks": 646,
+      "contributors": 100,
+      "issues": 146,
+      "pullRequests": 39,
+      "language": "TypeScript",
+      "activity": {
+        "firstCommit": {
+          "date": "2020-08-11T04:06:06Z",
+          "url": "https://github.com/NotionX/react-notion-x/commit/4754d3d925720d2e5530cb82fdc2f9b7d42ac6f2"
+        },
+        "latestCommit": {
+          "date": "2026-09-19T07:37:26Z",
+          "url": "https://github.com/NotionX/react-notion-x/commit/03c5e88ecd2fee40cf1dea35d082397c0b296619"
+        }
+      }
+    }
+  }
+}

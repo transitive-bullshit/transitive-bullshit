@@ -1,0 +1,7 @@
+allowBuilds:
+  esbuild: true
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - '@fisch0920/config'
