@@ -46,7 +46,7 @@ export const projects: Project[] = [
     repo: 'transitive-bullshit/ai-safety-doom',
     section: 'Recent',
     description:
-      'A Doom-inspired AI safety parody. Fight misaligned AIs and shut down the lab.',
+      'A Doom-inspired AI safety game. Fight misaligned AIs and shut down the lab.',
     image: {
       url: `${media}f0693c689006209da834eaede85e1defbe4cc7caf0304cc3b933b4c32551e3e8.webp`
     },

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-26T15:21:26.224Z",
+  "fetchedAt": "2026-09-26T16:26:40.320Z",
   "repos": {
     "transitive-bullshit/doom-or-bloom": {
       "stars": 3,
@@ -26,7 +26,7 @@
           "date": "2026-09-26T14:26:39Z",
           "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/38e340427d1f344c11653b64b330fcfca35a16f9"
         },
-        "fetchedAt": "2026-09-26T15:52:57.895Z"
+        "fetchedAt": "2026-09-26T16:26:41.651Z"
       }
     },
     "transitive-bullshit/reading-room": {
@@ -54,7 +54,7 @@
           "date": "2026-09-19T07:35:39Z",
           "url": "https://github.com/transitive-bullshit/reading-room/commit/6d124a574c887ca0d73732fc46a59a833a36826e"
         },
-        "fetchedAt": "2026-09-26T15:52:58.231Z"
+        "fetchedAt": "2026-09-26T16:26:44.518Z"
       }
     },
     "transitive-bullshit/ai-safety-doom": {
@@ -82,7 +82,7 @@
           "date": "2026-09-19T07:44:37Z",
           "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/de99fce98d664c218944ec030859251f26c6bccf"
         },
-        "fetchedAt": "2026-09-26T15:52:58.629Z"
+        "fetchedAt": "2026-09-26T16:26:47.136Z"
       }
     },
     "transitive-bullshit/cultural-alignment": {
@@ -110,7 +110,7 @@
           "date": "2026-09-26T11:42:32Z",
           "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/01877bc7072b0a66264b96400f9a12855c81a948"
         },
-        "fetchedAt": "2026-09-26T15:52:59.173Z"
+        "fetchedAt": "2026-09-26T16:26:50.643Z"
       }
     },
     "webtorrent/webtorrent": {

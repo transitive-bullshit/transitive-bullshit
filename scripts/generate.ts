@@ -2,6 +2,7 @@ import { load } from 'cheerio'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { parseArgs } from 'node:util'
+import pMap from 'p-map'
 import sharp from 'sharp'
 import { render } from 'takumi-js'
 
@@ -72,35 +73,40 @@ const snapshot: Snapshot = values.offline
   ? (JSON.parse(await readFile(snapshotPath, 'utf8')) as Snapshot)
   : { fetchedAt: new Date().toISOString(), repos: {} }
 
-const cards: { path: string; data: Buffer }[] = []
-for (const project of projects) {
-  const variant = cardVariant(project)
-  const stats = values.offline
-    ? snapshot.repos[project.repo]
-    : await fetchStats(project.repo, variant)
-  if (!stats)
-    throw new Error(
-      `No saved stats for ${project.repo}. Run pnpm generate first.`
+const cards = await pMap(
+  projects,
+  async (project) => {
+    const variant = cardVariant(project)
+    const stats = values.offline
+      ? snapshot.repos[project.repo]
+      : await fetchStats(project.repo, variant)
+    if (!stats)
+      throw new Error(
+        `No saved stats for ${project.repo}. Run pnpm generate first.`
+      )
+    snapshot.repos[project.repo] = stats
+    const image = await artwork(project)
+    const rendered = Buffer.from(
+      await render(renderCard(project, stats, image, variant), {
+        width: 1200,
+        height: 1072,
+        format: 'png',
+        emoji: 'from-font'
+      })
     )
-  snapshot.repos[project.repo] = stats
-  const image = await artwork(project)
-  const rendered = Buffer.from(
-    await render(renderCard(project, stats, image, variant), {
-      width: 1200,
-      height: 1072,
-      format: 'png',
-      emoji: 'from-font'
-    })
-  )
-  const data = await sharp(rendered).webp({ quality: 90, effort: 6 }).toBuffer()
-  cards.push({ path: join(output, `${project.slug}.webp`), data })
-  console.log(
-    `${project.name}: ${stats.stars.toLocaleString('en-US')} stars · ${stats.language ?? 'No language'}`
-  )
-}
+    const data = await sharp(rendered)
+      .webp({ quality: 90, effort: 6 })
+      .toBuffer()
+    console.log(
+      `${project.name}: ${stats.stars.toLocaleString('en-US')} stars · ${stats.language ?? 'No language'}`
+    )
+    return { path: join(output, `${project.slug}.webp`), data }
+  },
+  { concurrency: 8 }
+)
 
 // Finish fetching/rendering everything before replacing the public cards or README.
-for (const card of cards) await writeFile(card.path, card.data)
+await pMap(cards, (card) => writeFile(card.path, card.data), { concurrency: 8 })
 await writeFile(snapshotPath, `${JSON.stringify(snapshot, null, 2)}\n`)
 await writeFile(join(root, 'readme.md'), renderReadme(projects, snapshot.repos))
 console.log(
