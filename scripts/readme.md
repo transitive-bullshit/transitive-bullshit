@@ -7,9 +7,9 @@ pnpm install
 pnpm generate
 ```
 
-`pnpm generate` fetches current public GitHub statistics, renders eight 1200 × 1072 WebP cards, and updates the root README. Popular projects are sorted by stars; Recent follows the order in [projects.ts](projects.ts). Edit that file to change projects, descriptions, or image sources. Edit [render.ts](render.ts) to change the shared design.
+`pnpm generate` fetches current public GitHub statistics, renders eight 1200 × 946 WebP cards, and updates the root README. Popular projects are sorted by stars; Recent follows the order in [projects.ts](projects.ts). Edit that file to change projects, descriptions, or image sources. Edit [render.ts](render.ts) to change the shared design.
 
-Cards use **Takumi** (`takumi-js`) to render HTML/CSS at 1200 × 1072, with its bundled Geist font for consistent offline output. Takumi renders an intermediate PNG in memory, then Sharp encodes WebP at quality 90, effort 6 for smaller files. Sharp also normalizes downloaded source artwork. Source artwork stays at its original cached resolution. Descriptions use `text-wrap: pretty`; the star pills size to their content with fixed padding. The statistics labels align with their values, and the activity date sits opposite the language in the footer.
+Cards use **Takumi** (`takumi-js`) to render HTML/CSS at 1200 × 946, with its bundled Geist font for consistent offline output. Takumi renders an intermediate PNG in memory, then Sharp encodes WebP at quality 90, effort 6 for smaller files. Sharp also normalizes downloaded source artwork. Source artwork stays at its original cached resolution. Descriptions use `text-wrap: pretty`; the star pills size to their content with fixed padding. The activity date sits opposite the language in the footer.
 
 Encoder comparison measured across all eight cards on September 26, 2026, before the “Last updated” label change (decimal units; all outputs 1200 × 1072):
 
@@ -23,7 +23,7 @@ Direct rendering produces 31.7% more bytes than the Sharp conversion at these se
 
 Takumi's [output format options](https://takumi.kane.tw/docs/output-formats) support native WebP with a quality setting. The PNG → Sharp path is selected for its smaller output and slightly closer pixel fidelity at these settings.
 
-One shared template takes a `recent` or `popular` variant. Recent displays commits, “Last updated” as M/D/YYYY, open issues, and merged PRs. Popular displays forks, contributors, open issues, and open PRs. The README uses “Recent projects” and “Popular projects” headings with 47%-width previews and nonbreaking spaces between columns.
+One shared template takes a `recent` or `popular` variant. Both show the star count, language, and activity date, without a details grid. Popular uses a gold star pill; Recent uses a neutral pill. The README uses “Recent projects” and “Popular projects” headings with 47%-width previews and nonbreaking spaces between columns.
 
 ```sh
 pnpm generate --offline         # Render using committed artwork and statistics
@@ -41,7 +41,7 @@ Agentic uses a pinned technical cover generated with built-in imagegen, with mon
 
 GitHub requests work without authentication for public repositories. Set `GH_TOKEN` or `GITHUB_TOKEN` for a higher rate limit. Tokens are only sent to api.github.com, never to image hosts, and are never saved.
 
-Stars and forks are repository totals. Contributors include anonymous contributors as returned by GitHub's contributor endpoint. Recent counts commits by all authors on the default branch. Both variants display the same open-issue count, excluding PRs. “Last updated” uses the latest default-branch commit's committer timestamp, formatted as M/D/YYYY without leading zeros in Asia/Bangkok time. “PRs merged” counts only closed PRs with a non-null `merged_at`; closed but unmerged PRs are excluded. All issue and closed-PR pages are traversed. Its separate `totals` snapshot records its fetch date and latest commit source URL. Popular continues to count **open** issues and PRs separately; GitHub's combined open issue count is corrected by subtracting open PRs. The footer uses GitHub's dominant language and its language color, with a gray fallback for languages outside the small palette in `render.ts`. GitHub may briefly cache contributor statistics. Counts stay fixed until regeneration; the snapshot records their fetch date.
+Stars are repository totals. The footer uses GitHub's dominant language and its language color, with a gray fallback for languages outside the small palette in `render.ts`. Counts stay fixed until regeneration; the snapshot records their fetch date. The snapshot also retains additional repository statistics that are not displayed on the cards.
 
 Dates use commits attributed by GitHub to `transitive-bullshit` on the repository's default branch. Recent shows the first authored commit as `SEP 5, 2026` in Asia/Bangkok time. Popular shows the years of the first and latest authored commits, collapsing to one year when both match. These are contribution ranges in the linked repo, rather than claims about work in related repos or when a project stopped being maintained. Both source commit URLs and timestamps are saved under `activity` in the snapshot.
 

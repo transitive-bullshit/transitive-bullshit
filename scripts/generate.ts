@@ -89,7 +89,7 @@ const cards = await pMap(
     const rendered = Buffer.from(
       await render(renderCard(project, stats, image, variant), {
         width: 1200,
-        height: 1072,
+        height: 946,
         format: 'png',
         emoji: 'from-font'
       })

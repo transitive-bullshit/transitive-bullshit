@@ -4,7 +4,7 @@ import { mock, test } from 'node:test'
 import { countFromPage, fetchRecentTotals, splitIssues } from './github'
 import type { RepoStats } from './github'
 import { projects } from './projects'
-import { cardMetrics, compact, escapeXml, formatDate } from './render'
+import { compact, escapeXml, formatDate } from './render'
 
 await test('counts every contributor/PR using one-item pagination, including empty repos', () => {
   assert.equal(countFromPage([], null), 0)
@@ -85,31 +85,6 @@ await test('recent totals count all authors and issues, but only merged PRs acro
     assert.equal(totals.issues, 3)
     assert.equal(totals.mergedPullRequests, 2)
     assert.equal(totals.latestCommit.date, '2026-09-25T20:30:00Z')
-    const stats = {
-      forks: 8,
-      contributors: 2,
-      issues: 1,
-      pullRequests: 0,
-      totals
-    } as RepoStats
-    assert.deepEqual(
-      cardMetrics(stats, 'recent').map(({ label, value }) => [label, value]),
-      [
-        ['Commits', 153],
-        ['Last updated', '9/26/2026'],
-        ['Open issues', 1],
-        ['PRs merged', 2]
-      ]
-    )
-    assert.deepEqual(
-      cardMetrics(stats, 'popular').map(({ label, value }) => [label, value]),
-      [
-        ['Forks', 8],
-        ['Contributors', 2],
-        ['Open issues', 1],
-        ['Open PRs', 0]
-      ]
-    )
   } finally {
     fetchMock.mock.restore()
   }
