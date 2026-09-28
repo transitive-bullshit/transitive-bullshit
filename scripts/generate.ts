@@ -8,7 +8,7 @@ import { render } from 'takumi-js'
 
 import { fetchStats, type Snapshot } from './github'
 import { cardVariant, projects, type Project } from './projects'
-import { renderCard, renderReadme } from './render'
+import { projectRows, renderCard, renderReadme } from './render'
 
 const { values } = parseArgs({
   options: {
@@ -73,7 +73,7 @@ const snapshot: Snapshot = values.offline
   ? (JSON.parse(await readFile(snapshotPath, 'utf8')) as Snapshot)
   : { fetchedAt: new Date().toISOString(), repos: {} }
 
-const cards = await pMap(
+const prepared = await pMap(
   projects,
   async (project) => {
     const variant = cardVariant(project)
@@ -89,21 +89,57 @@ const cards = await pMap(
     const rendered = Buffer.from(
       await render(renderCard(project, stats, image, variant), {
         width: 1200,
-        height: 946,
         format: 'png',
         emoji: 'from-font'
       })
     )
-    const data = await sharp(rendered)
-      .webp({ quality: 90, effort: 6 })
-      .toBuffer()
-    console.log(
-      `${project.name}: ${stats.stars.toLocaleString('en-US')} stars · ${stats.language ?? 'No language'}`
-    )
-    return { path: join(output, `${project.slug}.webp`), data }
+    const { height } = await sharp(rendered).metadata()
+    return { project, stats, image, rendered, height }
   },
   { concurrency: 8 }
 )
+
+const byRepo = new Map(prepared.map((card) => [card.project.repo, card]))
+const rows = projectRows(projects, snapshot.repos).flatMap(({ rows }) => rows)
+const cards = (
+  await pMap(
+    rows,
+    async (row) => {
+      const height = Math.max(
+        ...row.map((project) => byRepo.get(project.repo)!.height)
+      )
+      return pMap(row, async (project) => {
+        const card = byRepo.get(project.repo)!
+        const rendered =
+          card.height === height
+            ? card.rendered
+            : Buffer.from(
+                await render(
+                  renderCard(
+                    project,
+                    card.stats,
+                    card.image,
+                    cardVariant(project),
+                    height
+                  ),
+                  {
+                    width: 1200,
+                    height,
+                    format: 'png',
+                    emoji: 'from-font'
+                  }
+                )
+              )
+        const data = await sharp(rendered)
+          .webp({ quality: 90, effort: 6 })
+          .toBuffer()
+        console.log(`${project.name}: 1200 × ${height}`)
+        return { path: join(output, `${project.slug}.webp`), data }
+      })
+    },
+    { concurrency: 4 }
+  )
+).flat()
 
 // Finish fetching/rendering everything before replacing the public cards or README.
 await pMap(cards, (card) => writeFile(card.path, card.data), { concurrency: 8 })

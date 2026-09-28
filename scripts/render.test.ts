@@ -4,7 +4,54 @@ import { mock, test } from 'node:test'
 import { countFromPage, fetchRecentTotals, splitIssues } from './github'
 import type { RepoStats } from './github'
 import { projects } from './projects'
-import { compact, escapeXml, formatDate } from './render'
+import {
+  compact,
+  escapeXml,
+  formatDate,
+  languageBreakdown,
+  languageLegend
+} from './render'
+
+await test('language breakdowns preserve byte proportions, official colors, and small languages', () => {
+  const stats = {
+    languages: { Python: 850, HTML: 144, Shell: 6, Empty: 0 }
+  }
+  const languages = languageBreakdown(stats)
+  assert.deepEqual(
+    languages.map(({ name, percent }) => ({
+      name,
+      percent: Number(percent.toFixed(1))
+    })),
+    [
+      { name: 'Python', percent: 85 },
+      { name: 'HTML', percent: 14.4 },
+      { name: 'Shell', percent: 0.6 }
+    ]
+  )
+  assert.equal(languages[0]!.color, '#3572a5')
+  assert.equal(
+    languageBreakdown({ languages: { TypeScript: 1 } })[0]!.color,
+    '#3178c6'
+  )
+  assert.deepEqual(languageBreakdown({ languages: {} }), [])
+  assert.deepEqual(languageBreakdown({}), [])
+  const many = {
+    languages: {
+      TypeScript: 900,
+      CSS: 50,
+      JavaScript: 30,
+      HTML: 15,
+      Unknown: 5
+    }
+  }
+  assert.equal(languageBreakdown(many).length, 5)
+  assert.equal(languageBreakdown(many)[4]!.color, '#8b949e')
+  assert.deepEqual(languageLegend(many)[3], {
+    name: 'Other',
+    percent: 2,
+    color: '#8b949e'
+  })
+})
 
 await test('counts every contributor/PR using one-item pagination, including empty repos', () => {
   assert.equal(countFromPage([], null), 0)

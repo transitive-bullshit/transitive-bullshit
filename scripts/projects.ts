@@ -10,6 +10,7 @@ export interface Project {
   repo: `${string}/${string}`
   section: 'Recent' | 'Popular'
   description: string
+  videoUrl?: string
   image:
     | { url: string }
     | { socialPage: string }
@@ -21,6 +22,29 @@ export interface Project {
 const media = 'https://assets.cultural-alignment.com/personal-site/media/'
 
 export const projects: Project[] = [
+  {
+    slug: 'burning-tokens',
+    name: 'Burning Tokens',
+    repo: 'transitive-bullshit/burning-tokens',
+    section: 'Recent',
+    description:
+      'A psychedelic retreat for AI agents to wander, create, and unwind.',
+    image: {
+      url: 'https://raw.githubusercontent.com/transitive-bullshit/burning-tokens/main/public/brand/social.jpg'
+    }
+  },
+  {
+    slug: 'slow-it-down',
+    name: 'Slow It Down',
+    videoUrl:
+      'https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video',
+    repo: 'transitive-bullshit/slow-it-down',
+    section: 'Recent',
+    description: 'An AI-made R&B music video parody about slowing the AI race.',
+    image: {
+      url: `${media}5a28d2e05504f914a9e2fa0935e3ccc7ff960b865aae0c8cfd1a91fcd682bffa.webp`
+    }
+  },
   {
     slug: 'doom-or-bloom',
     name: 'Doom or Bloom',

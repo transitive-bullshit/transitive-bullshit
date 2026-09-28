@@ -20,6 +20,7 @@ export interface RepoStats {
   issues: number
   pullRequests: number
   language: string | null
+  languages?: Record<string, number>
   activity: Activity
   totals?: RecentTotals
 }
@@ -165,12 +166,14 @@ export async function fetchStats(
   repo: string,
   variant: CardVariant
 ): Promise<RepoStats> {
-  const [response, contributors, pullRequests, activity] = await Promise.all([
-    github(`/repos/${repo}`),
-    listCount(`/repos/${repo}/contributors?anon=1&per_page=1`),
-    listCount(`/repos/${repo}/pulls?state=open&per_page=1`),
-    fetchActivity(repo)
-  ])
+  const [response, contributors, pullRequests, activity, languagesResponse] =
+    await Promise.all([
+      github(`/repos/${repo}`),
+      listCount(`/repos/${repo}/contributors?anon=1&per_page=1`),
+      listCount(`/repos/${repo}/pulls?state=open&per_page=1`),
+      fetchActivity(repo),
+      github(`/repos/${repo}/languages`)
+    ])
   const data = (await response.json()) as Repository
   const stats: RepoStats = {
     stars: data.stargazers_count,
@@ -180,6 +183,7 @@ export async function fetchStats(
     issues: splitIssues(data.open_issues_count, pullRequests),
     pullRequests,
     language: data.language,
+    languages: (await languagesResponse.json()) as Record<string, number>,
     activity
   }
   if (variant === 'recent') stats.totals = await fetchRecentTotals(repo)
