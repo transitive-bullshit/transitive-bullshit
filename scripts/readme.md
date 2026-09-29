@@ -33,7 +33,9 @@ pnpm test                      # Types, lint, formatting, and focused logic test
 
 Artwork is cached in `assets/sources/`; the last successful GitHub snapshot is in `assets/projects/stats.json`. Doom or Bloom resolves its webapp's current `og:image` when artwork is refreshed. Burning Tokens, Slow It Down, and Sometimes I Think Slow use the main images linked at the top of their repository READMEs. The remaining images come from transitivebullsh.it or the pinned sources below. WebP output can also be reused outside the README.
 
-Set `videoUrl` on projects whose main output is a video. These cards render a centered translucent charcoal play overlay with a subtle border and soft shadow over the artwork and link to the video page instead of the repository. The cached source image stays unchanged; Slow It Down and Sometimes I Think Slow use this treatment.
+All profile project cards must link to their GitHub repository (`https://github.com/${project.repo}`), including video projects. This profile serves GitHub and open-source users who expect to stay on GitHub. Keep external viewing links in the project repository and clearly label their destination so users understand when they are leaving GitHub. Do not add external URL overrides to profile cards.
+
+Set `video: true` on projects whose main output is a video. This controls only the centered translucent charcoal play overlay with a subtle border and soft shadow; it never changes the repository link. Alt text identifies a video project without promising immediate playback. The cached source image stays unchanged; Slow It Down and Sometimes I Think Slow use this treatment.
 
 Personal Skills uses the first Midjourney example image from its repository README, showing a lone artist beneath a vast, translucent structure.
 

@@ -114,7 +114,7 @@ function cardDescription(project: Project, stats: RepoStats): string {
   const languages = languageBreakdown(stats)
     .map((language) => `${language.name} ${percentage(language.percent)}`)
     .join(', ')
-  return `${project.videoUrl ? 'Watch video. ' : ''}${project.description} ${stats.stars} stars. Languages: ${languages || 'Not specified'}. ${formatDate(project, stats)}.`
+  return `${project.video ? 'Video project. ' : ''}${project.description} ${stats.stars} stars. Languages: ${languages || 'Not specified'}. ${formatDate(project, stats)}.`
 }
 
 function videoPlayOverlay(): string {
@@ -159,7 +159,7 @@ export function renderCard(
   </style></head><body>
     <div class="card">
       <img class="artwork" src="data:image/webp;base64,${image.toString('base64')}" />
-      ${project.videoUrl ? videoPlayOverlay() : ''}
+      ${project.video ? videoPlayOverlay() : ''}
       <div class="content">
         <div class="heading">
           <div class="name">${escapeXml(project.name)}</div>
@@ -212,7 +212,7 @@ export function renderReadme(
       lines.push('<p>')
       const links = row.map(
         (project) =>
-          `<a href="${escapeXml(project.videoUrl ?? `https://github.com/${project.repo}`)}"><img src="assets/projects/${project.slug}.webp" alt="${escapeXml(`${project.name}: ${cardDescription(project, stats[project.repo]!)}`)}" width="47%" /></a>`
+          `<a href="${escapeXml(`https://github.com/${project.repo}`)}"><img src="assets/projects/${project.slug}.webp" alt="${escapeXml(`${project.name}: ${cardDescription(project, stats[project.repo]!)}`)}" width="47%" /></a>`
       )
       lines.push(`  ${links.join('&nbsp;&nbsp;&nbsp;')}`)
       lines.push('</p>', '')

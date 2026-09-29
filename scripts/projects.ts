@@ -10,7 +10,7 @@ export interface Project {
   repo: `${string}/${string}`
   section: 'Recent' | 'Popular'
   description: string
-  videoUrl?: string
+  video?: boolean
   image:
     | { url: string }
     | { socialPage: string }
@@ -27,8 +27,7 @@ export const projects: Project[] = [
     name: 'Sometimes I Think Slow',
     repo: 'transitive-bullshit/sometimes-i-think-slow',
     section: 'Recent',
-    videoUrl:
-      'https://www.transitivebullsh.it/projects/sometimes-i-think-slow-ai-music-video',
+    video: true,
     description:
       'An AI-made hip-hop music video about fast and slow AI thinking.',
     image: {
@@ -60,8 +59,7 @@ export const projects: Project[] = [
   {
     slug: 'slow-it-down',
     name: 'Slow It Down',
-    videoUrl:
-      'https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video',
+    video: true,
     repo: 'transitive-bullshit/slow-it-down',
     section: 'Recent',
     description:
