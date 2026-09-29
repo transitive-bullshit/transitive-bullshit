@@ -30,7 +30,7 @@ export const projects: Project[] = [
     videoUrl:
       'https://www.transitivebullsh.it/projects/sometimes-i-think-slow-ai-music-video',
     description:
-      'An AI-made hip-hop music video parody about fast and slow AI thinking.',
+      'An AI-made hip-hop music video about fast and slow AI thinking.',
     image: {
       url: 'https://raw.githubusercontent.com/transitive-bullshit/sometimes-i-think-slow/main/media/poster.webp'
     }
@@ -64,7 +64,8 @@ export const projects: Project[] = [
       'https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video',
     repo: 'transitive-bullshit/slow-it-down',
     section: 'Recent',
-    description: 'An AI-made R&B music video parody about slowing the AI race.',
+    description:
+      'An AI-made R&B music video about how slowing down the AI race can still be sexy.',
     image: {
       url: `${media}5a28d2e05504f914a9e2fa0935e3ccc7ff960b865aae0c8cfd1a91fcd682bffa.webp`
     }

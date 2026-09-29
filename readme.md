@@ -3,7 +3,7 @@ Building at the edge of AGI. Don't take anything I say too seriously.
 ## Recent projects
 
 <p>
-  <a href="https://www.transitivebullsh.it/projects/sometimes-i-think-slow-ai-music-video"><img src="assets/projects/sometimes-i-think-slow.webp" alt="Sometimes I Think Slow: Watch video. An AI-made hip-hop music video parody about fast and slow AI thinking. 0 stars. Languages: Python 71.4%, HTML 28.6%. SEP 28, 2026." width="47%" /></a>&nbsp;&nbsp;&nbsp;<a href="https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video"><img src="assets/projects/slow-it-down.webp" alt="Slow It Down: Watch video. An AI-made R&amp;B music video parody about slowing the AI race. 0 stars. Languages: Python 85.1%, HTML 14.3%, Shell 0.6%. SEP 28, 2026." width="47%" /></a>
+  <a href="https://www.transitivebullsh.it/projects/sometimes-i-think-slow-ai-music-video"><img src="assets/projects/sometimes-i-think-slow.webp" alt="Sometimes I Think Slow: Watch video. An AI-made hip-hop music video about fast and slow AI thinking. 0 stars. Languages: Python 71.4%, HTML 28.6%. SEP 28, 2026." width="47%" /></a>&nbsp;&nbsp;&nbsp;<a href="https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video"><img src="assets/projects/slow-it-down.webp" alt="Slow It Down: Watch video. An AI-made R&amp;B music video about how slowing down the AI race can still be sexy. 0 stars. Languages: Python 85.1%, HTML 14.3%, Shell 0.6%. SEP 28, 2026." width="47%" /></a>
 </p>
 
 <p>
