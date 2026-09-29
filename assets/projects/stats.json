@@ -1,190 +1,6 @@
 {
-  "fetchedAt": "2026-09-28T14:51:57.789Z",
+  "fetchedAt": "2026-09-29T10:38:59.704Z",
   "repos": {
-    "webtorrent/webtorrent": {
-      "stars": 31425,
-      "forks": 2902,
-      "contributors": 205,
-      "issues": 64,
-      "pullRequests": 17,
-      "language": "JavaScript",
-      "activity": {
-        "firstCommit": {
-          "date": "2014-05-12T08:24:59Z",
-          "url": "https://github.com/webtorrent/webtorrent/commit/776f49e302a307377c86c73d3800aaa600cb5eda"
-        },
-        "latestCommit": {
-          "date": "2014-06-05T00:55:18Z",
-          "url": "https://github.com/webtorrent/webtorrent/commit/a67d87bd03c359614c504ccc959bcda50dd71d85"
-        }
-      },
-      "languages": {
-        "JavaScript": 292335,
-        "Shell": 610
-      }
-    },
-    "transitive-bullshit/slow-it-down": {
-      "stars": 0,
-      "forks": 0,
-      "contributors": 1,
-      "issues": 0,
-      "pullRequests": 0,
-      "language": "Python",
-      "activity": {
-        "firstCommit": {
-          "date": "2026-09-28T14:47:59Z",
-          "url": "https://github.com/transitive-bullshit/slow-it-down/commit/9c4434e5c9f53327cfbae2b717af8e1d2b259783"
-        },
-        "latestCommit": {
-          "date": "2026-09-28T14:51:10Z",
-          "url": "https://github.com/transitive-bullshit/slow-it-down/commit/c9b11c20f13b9622343026ecdeeeabee79ac54c4"
-        }
-      },
-      "totals": {
-        "commits": 2,
-        "issues": 0,
-        "mergedPullRequests": 0,
-        "latestCommit": {
-          "date": "2026-09-28T14:51:10Z",
-          "url": "https://github.com/transitive-bullshit/slow-it-down/commit/c9b11c20f13b9622343026ecdeeeabee79ac54c4"
-        },
-        "fetchedAt": "2026-09-28T14:51:59.052Z"
-      },
-      "languages": {
-        "Python": 356900,
-        "HTML": 60660,
-        "Shell": 2340
-      }
-    },
-    "transitive-bullshit/reading-room": {
-      "stars": 13,
-      "forks": 0,
-      "contributors": 1,
-      "issues": 0,
-      "pullRequests": 0,
-      "language": "TypeScript",
-      "activity": {
-        "firstCommit": {
-          "date": "2026-09-08T01:46:03Z",
-          "url": "https://github.com/transitive-bullshit/reading-room/commit/9b444c57509fa59b51ff49b8e7e0915a3d98fcdb"
-        },
-        "latestCommit": {
-          "date": "2026-09-19T07:35:39Z",
-          "url": "https://github.com/transitive-bullshit/reading-room/commit/6d124a574c887ca0d73732fc46a59a833a36826e"
-        }
-      },
-      "totals": {
-        "commits": 8,
-        "issues": 0,
-        "mergedPullRequests": 0,
-        "latestCommit": {
-          "date": "2026-09-19T07:35:39Z",
-          "url": "https://github.com/transitive-bullshit/reading-room/commit/6d124a574c887ca0d73732fc46a59a833a36826e"
-        },
-        "fetchedAt": "2026-09-28T14:51:59.065Z"
-      },
-      "languages": {
-        "TypeScript": 336510,
-        "CSS": 33409,
-        "JavaScript": 90
-      }
-    },
-    "transitive-bullshit/ai-safety-doom": {
-      "stars": 6,
-      "forks": 1,
-      "contributors": 1,
-      "issues": 1,
-      "pullRequests": 0,
-      "language": "TypeScript",
-      "activity": {
-        "firstCommit": {
-          "date": "2026-09-04T23:28:57Z",
-          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/e054fab12998a3d2b4c4909d9ba4837e9be8256c"
-        },
-        "latestCommit": {
-          "date": "2026-09-19T07:44:37Z",
-          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/de99fce98d664c218944ec030859251f26c6bccf"
-        }
-      },
-      "totals": {
-        "commits": 20,
-        "issues": 1,
-        "mergedPullRequests": 0,
-        "latestCommit": {
-          "date": "2026-09-19T07:44:37Z",
-          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/de99fce98d664c218944ec030859251f26c6bccf"
-        },
-        "fetchedAt": "2026-09-28T14:51:59.195Z"
-      },
-      "languages": {
-        "TypeScript": 573548,
-        "CSS": 48145,
-        "JavaScript": 90
-      }
-    },
-    "transitive-bullshit/doom-or-bloom": {
-      "stars": 5,
-      "forks": 0,
-      "contributors": 1,
-      "issues": 0,
-      "pullRequests": 0,
-      "language": "TypeScript",
-      "activity": {
-        "firstCommit": {
-          "date": "2026-09-17T10:32:36Z",
-          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/298612418a0560ea1c2f69fc43fcddc76bf4c1cf"
-        },
-        "latestCommit": {
-          "date": "2026-09-27T15:47:54Z",
-          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/9724095f1d311b563fdf869c81b80dfe117c74e6"
-        }
-      },
-      "totals": {
-        "commits": 337,
-        "issues": 0,
-        "mergedPullRequests": 11,
-        "latestCommit": {
-          "date": "2026-09-27T15:47:54Z",
-          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/9724095f1d311b563fdf869c81b80dfe117c74e6"
-        },
-        "fetchedAt": "2026-09-28T14:51:59.282Z"
-      },
-      "languages": {
-        "TypeScript": 3070519,
-        "CSS": 40661,
-        "JavaScript": 16212,
-        "HTML": 10237,
-        "PLpgSQL": 6719,
-        "Python": 4109,
-        "Shell": 1698
-      }
-    },
-    "transitive-bullshit/agentic": {
-      "stars": 18103,
-      "forks": 2213,
-      "contributors": 142,
-      "issues": 13,
-      "pullRequests": 2,
-      "language": "TypeScript",
-      "activity": {
-        "firstCommit": {
-          "date": "2022-12-02T23:43:59Z",
-          "url": "https://github.com/transitive-bullshit/agentic/commit/a479d1689bc5cf010aac1ccd958940d2ea73babf"
-        },
-        "latestCommit": {
-          "date": "2026-02-11T04:50:00Z",
-          "url": "https://github.com/transitive-bullshit/agentic/commit/beffa8ecfaffcf2e2435b077d5b7cd2dc33298bb"
-        }
-      },
-      "languages": {
-        "TypeScript": 5224824,
-        "MDX": 57785,
-        "CSS": 11556,
-        "JavaScript": 6092,
-        "Starlark": 1412,
-        "Shell": 225
-      }
-    },
     "transitive-bullshit/burning-tokens": {
       "stars": 0,
       "forks": 0,
@@ -192,6 +8,12 @@
       "issues": 0,
       "pullRequests": 0,
       "language": "JavaScript",
+      "languages": {
+        "JavaScript": 573015,
+        "TypeScript": 335460,
+        "CSS": 45305,
+        "HTML": 2496
+      },
       "activity": {
         "firstCommit": {
           "date": "2026-09-14T02:08:07Z",
@@ -210,13 +32,207 @@
           "date": "2026-09-24T05:51:53Z",
           "url": "https://github.com/transitive-bullshit/burning-tokens/commit/732dc821b4889c4af2b7b9e60324649be2873a34"
         },
-        "fetchedAt": "2026-09-28T14:52:01.407Z"
-      },
+        "fetchedAt": "2026-09-29T10:39:01.092Z"
+      }
+    },
+    "transitive-bullshit/ai-safety-doom": {
+      "stars": 6,
+      "forks": 1,
+      "contributors": 1,
+      "issues": 1,
+      "pullRequests": 0,
+      "language": "TypeScript",
       "languages": {
-        "JavaScript": 573015,
-        "TypeScript": 335460,
-        "CSS": 45305,
-        "HTML": 2496
+        "TypeScript": 573548,
+        "CSS": 48145,
+        "JavaScript": 90
+      },
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-04T23:28:57Z",
+          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/e054fab12998a3d2b4c4909d9ba4837e9be8256c"
+        },
+        "latestCommit": {
+          "date": "2026-09-19T07:44:37Z",
+          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/de99fce98d664c218944ec030859251f26c6bccf"
+        }
+      },
+      "totals": {
+        "commits": 20,
+        "issues": 1,
+        "mergedPullRequests": 0,
+        "latestCommit": {
+          "date": "2026-09-19T07:44:37Z",
+          "url": "https://github.com/transitive-bullshit/ai-safety-doom/commit/de99fce98d664c218944ec030859251f26c6bccf"
+        },
+        "fetchedAt": "2026-09-29T10:39:01.185Z"
+      }
+    },
+    "transitive-bullshit/skills": {
+      "stars": 2,
+      "forks": 1,
+      "contributors": 1,
+      "issues": 0,
+      "pullRequests": 0,
+      "language": "Shell",
+      "languages": {
+        "Shell": 849,
+        "TypeScript": 101
+      },
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-06T23:11:49Z",
+          "url": "https://github.com/transitive-bullshit/skills/commit/7772a4e1f2cb2ac9e83fefb064c81a487073c5f3"
+        },
+        "latestCommit": {
+          "date": "2026-09-24T16:01:45Z",
+          "url": "https://github.com/transitive-bullshit/skills/commit/a1c2fd139b1b86b7e198a66427eccb97262d0797"
+        }
+      },
+      "totals": {
+        "commits": 9,
+        "issues": 0,
+        "mergedPullRequests": 0,
+        "latestCommit": {
+          "date": "2026-09-24T16:01:45Z",
+          "url": "https://github.com/transitive-bullshit/skills/commit/a1c2fd139b1b86b7e198a66427eccb97262d0797"
+        },
+        "fetchedAt": "2026-09-29T10:39:01.387Z"
+      }
+    },
+    "transitive-bullshit/slow-it-down": {
+      "stars": 0,
+      "forks": 0,
+      "contributors": 1,
+      "issues": 0,
+      "pullRequests": 0,
+      "language": "Python",
+      "languages": {
+        "Python": 360467,
+        "HTML": 60660,
+        "Shell": 2340
+      },
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-28T14:47:59Z",
+          "url": "https://github.com/transitive-bullshit/slow-it-down/commit/9c4434e5c9f53327cfbae2b717af8e1d2b259783"
+        },
+        "latestCommit": {
+          "date": "2026-09-29T09:53:16Z",
+          "url": "https://github.com/transitive-bullshit/slow-it-down/commit/c3b02cebb0419b9b16ef12ce04cbe3f25ee7d474"
+        }
+      },
+      "totals": {
+        "commits": 5,
+        "issues": 0,
+        "mergedPullRequests": 0,
+        "latestCommit": {
+          "date": "2026-09-29T09:53:16Z",
+          "url": "https://github.com/transitive-bullshit/slow-it-down/commit/c3b02cebb0419b9b16ef12ce04cbe3f25ee7d474"
+        },
+        "fetchedAt": "2026-09-29T10:39:01.398Z"
+      }
+    },
+    "transitive-bullshit/sometimes-i-think-slow": {
+      "stars": 0,
+      "forks": 0,
+      "contributors": 1,
+      "issues": 0,
+      "pullRequests": 0,
+      "language": "Python",
+      "languages": {
+        "Python": 176130,
+        "HTML": 70443
+      },
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-28T16:54:38Z",
+          "url": "https://github.com/transitive-bullshit/sometimes-i-think-slow/commit/5eea884e1fafb9812802261a5c04e21fcdc527d7"
+        },
+        "latestCommit": {
+          "date": "2026-09-29T09:38:40Z",
+          "url": "https://github.com/transitive-bullshit/sometimes-i-think-slow/commit/acda95503f8e2487c93b2bed7d6f45df16a29321"
+        }
+      },
+      "totals": {
+        "commits": 10,
+        "issues": 0,
+        "mergedPullRequests": 0,
+        "latestCommit": {
+          "date": "2026-09-29T09:38:40Z",
+          "url": "https://github.com/transitive-bullshit/sometimes-i-think-slow/commit/acda95503f8e2487c93b2bed7d6f45df16a29321"
+        },
+        "fetchedAt": "2026-09-29T10:39:01.406Z"
+      }
+    },
+    "transitive-bullshit/doom-or-bloom": {
+      "stars": 5,
+      "forks": 0,
+      "contributors": 1,
+      "issues": 0,
+      "pullRequests": 0,
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 3084497,
+        "CSS": 40661,
+        "JavaScript": 16212,
+        "HTML": 10237,
+        "PLpgSQL": 6719,
+        "Python": 4109,
+        "Shell": 1698
+      },
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-17T10:32:36Z",
+          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/298612418a0560ea1c2f69fc43fcddc76bf4c1cf"
+        },
+        "latestCommit": {
+          "date": "2026-09-28T23:19:08Z",
+          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/711e5a72eb4599938a6e93a12c102d13239c5b1e"
+        }
+      },
+      "totals": {
+        "commits": 340,
+        "issues": 0,
+        "mergedPullRequests": 12,
+        "latestCommit": {
+          "date": "2026-09-28T23:19:08Z",
+          "url": "https://github.com/transitive-bullshit/doom-or-bloom/commit/711e5a72eb4599938a6e93a12c102d13239c5b1e"
+        },
+        "fetchedAt": "2026-09-29T10:39:01.424Z"
+      }
+    },
+    "transitive-bullshit/reading-room": {
+      "stars": 13,
+      "forks": 0,
+      "contributors": 1,
+      "issues": 0,
+      "pullRequests": 0,
+      "language": "TypeScript",
+      "languages": {
+        "TypeScript": 336510,
+        "CSS": 33409,
+        "JavaScript": 90
+      },
+      "activity": {
+        "firstCommit": {
+          "date": "2026-09-08T01:46:03Z",
+          "url": "https://github.com/transitive-bullshit/reading-room/commit/9b444c57509fa59b51ff49b8e7e0915a3d98fcdb"
+        },
+        "latestCommit": {
+          "date": "2026-09-19T07:35:39Z",
+          "url": "https://github.com/transitive-bullshit/reading-room/commit/6d124a574c887ca0d73732fc46a59a833a36826e"
+        }
+      },
+      "totals": {
+        "commits": 8,
+        "issues": 0,
+        "mergedPullRequests": 0,
+        "latestCommit": {
+          "date": "2026-09-19T07:35:39Z",
+          "url": "https://github.com/transitive-bullshit/reading-room/commit/6d124a574c887ca0d73732fc46a59a833a36826e"
+        },
+        "fetchedAt": "2026-09-29T10:39:01.528Z"
       }
     },
     "transitive-bullshit/cultural-alignment": {
@@ -226,39 +242,66 @@
       "issues": 12,
       "pullRequests": 0,
       "language": "TypeScript",
+      "languages": {
+        "TypeScript": 1405837,
+        "CSS": 195325,
+        "JavaScript": 90
+      },
       "activity": {
         "firstCommit": {
           "date": "2026-08-27T13:03:57Z",
           "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/b7ea03521fb4ec4ffef1ca9eb8d59affd941addb"
         },
         "latestCommit": {
-          "date": "2026-09-26T18:05:51Z",
-          "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/1f47e9dc001290ebffc72c3fa98c8dd68fc6a432"
+          "date": "2026-09-28T21:13:41Z",
+          "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/3ab5096ca53ead4d5bf9226b3b686d011ff27662"
         }
       },
       "totals": {
-        "commits": 146,
+        "commits": 147,
         "issues": 13,
         "mergedPullRequests": 9,
         "latestCommit": {
-          "date": "2026-09-26T18:05:51Z",
-          "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/1f47e9dc001290ebffc72c3fa98c8dd68fc6a432"
+          "date": "2026-09-28T21:13:41Z",
+          "url": "https://github.com/transitive-bullshit/cultural-alignment/commit/3ab5096ca53ead4d5bf9226b3b686d011ff27662"
         },
-        "fetchedAt": "2026-09-28T14:52:01.768Z"
-      },
+        "fetchedAt": "2026-09-29T10:39:01.842Z"
+      }
+    },
+    "webtorrent/webtorrent": {
+      "stars": 31426,
+      "forks": 2901,
+      "contributors": 205,
+      "issues": 64,
+      "pullRequests": 17,
+      "language": "JavaScript",
       "languages": {
-        "TypeScript": 1405837,
-        "CSS": 195325,
-        "JavaScript": 90
+        "JavaScript": 292335,
+        "Shell": 610
+      },
+      "activity": {
+        "firstCommit": {
+          "date": "2014-05-12T08:24:59Z",
+          "url": "https://github.com/webtorrent/webtorrent/commit/776f49e302a307377c86c73d3800aaa600cb5eda"
+        },
+        "latestCommit": {
+          "date": "2014-06-05T00:55:18Z",
+          "url": "https://github.com/webtorrent/webtorrent/commit/a67d87bd03c359614c504ccc959bcda50dd71d85"
+        }
       }
     },
     "transitive-bullshit/nextjs-notion-starter-kit": {
       "stars": 7032,
-      "forks": 5653,
+      "forks": 5652,
       "contributors": 30,
       "issues": 125,
       "pullRequests": 28,
       "language": "TypeScript",
+      "languages": {
+        "TypeScript": 509327,
+        "CSS": 16678,
+        "JavaScript": 784
+      },
       "activity": {
         "firstCommit": {
           "date": "2021-01-15T13:25:47Z",
@@ -268,20 +311,45 @@
           "date": "2026-09-19T07:37:45Z",
           "url": "https://github.com/transitive-bullshit/nextjs-notion-starter-kit/commit/048635ef1531becf4e4926c70abca8413e264f3d"
         }
-      },
+      }
+    },
+    "transitive-bullshit/agentic": {
+      "stars": 18103,
+      "forks": 2213,
+      "contributors": 142,
+      "issues": 13,
+      "pullRequests": 2,
+      "language": "TypeScript",
       "languages": {
-        "TypeScript": 509327,
-        "CSS": 16678,
-        "JavaScript": 784
+        "TypeScript": 5224824,
+        "MDX": 57785,
+        "CSS": 11556,
+        "JavaScript": 6092,
+        "Starlark": 1412,
+        "Shell": 225
+      },
+      "activity": {
+        "firstCommit": {
+          "date": "2022-12-02T23:43:59Z",
+          "url": "https://github.com/transitive-bullshit/agentic/commit/a479d1689bc5cf010aac1ccd958940d2ea73babf"
+        },
+        "latestCommit": {
+          "date": "2026-02-11T04:50:00Z",
+          "url": "https://github.com/transitive-bullshit/agentic/commit/beffa8ecfaffcf2e2435b077d5b7cd2dc33298bb"
+        }
       }
     },
     "NotionX/react-notion-x": {
       "stars": 5433,
-      "forks": 646,
+      "forks": 647,
       "contributors": 100,
       "issues": 146,
       "pullRequests": 39,
       "language": "TypeScript",
+      "languages": {
+        "TypeScript": 385726,
+        "CSS": 71878
+      },
       "activity": {
         "firstCommit": {
           "date": "2020-08-11T04:06:06Z",
@@ -291,10 +359,6 @@
           "date": "2026-09-19T07:37:26Z",
           "url": "https://github.com/NotionX/react-notion-x/commit/03c5e88ecd2fee40cf1dea35d082397c0b296619"
         }
-      },
-      "languages": {
-        "TypeScript": 385726,
-        "CSS": 71878
       }
     }
   }

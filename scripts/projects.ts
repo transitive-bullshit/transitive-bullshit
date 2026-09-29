@@ -23,12 +23,36 @@ const media = 'https://assets.cultural-alignment.com/personal-site/media/'
 
 export const projects: Project[] = [
   {
+    slug: 'sometimes-i-think-slow',
+    name: 'Sometimes I Think Slow',
+    repo: 'transitive-bullshit/sometimes-i-think-slow',
+    section: 'Recent',
+    videoUrl:
+      'https://www.transitivebullsh.it/projects/sometimes-i-think-slow-ai-music-video',
+    description:
+      'An AI-made hip-hop music video parody about fast and slow AI thinking.',
+    image: {
+      url: 'https://raw.githubusercontent.com/transitive-bullshit/sometimes-i-think-slow/main/media/poster.webp'
+    }
+  },
+  {
+    slug: 'skills',
+    name: 'Personal Skills',
+    repo: 'transitive-bullshit/skills',
+    section: 'Recent',
+    description:
+      'Reusable skills for AI agents, from Midjourney images to branding and storytelling.',
+    image: {
+      url: 'https://raw.githubusercontent.com/transitive-bullshit/skills/main/skills/midjourney-images/docs/midjourney-example-output-0.jpg'
+    }
+  },
+  {
     slug: 'burning-tokens',
     name: 'Burning Tokens',
     repo: 'transitive-bullshit/burning-tokens',
     section: 'Recent',
     description:
-      'A psychedelic retreat for AI agents to wander, create, and unwind.',
+      'Burning Man for Agents! A psychedelic retreat for AI agents to wander, create, and unwind.',
     image: {
       url: 'https://raw.githubusercontent.com/transitive-bullshit/burning-tokens/main/public/brand/social.jpg'
     }

@@ -186,6 +186,12 @@ export function projectRows(
     const items = projects.filter((project) => project.section === section)
     if (section === 'Popular')
       items.sort((a, b) => stats[b.repo]!.stars - stats[a.repo]!.stars)
+    else
+      items.sort(
+        (a, b) =>
+          Date.parse(stats[b.repo]!.activity.firstCommit.date) -
+          Date.parse(stats[a.repo]!.activity.firstCommit.date)
+      )
     const rows: Project[][] = []
     for (let i = 0; i < items.length; i += 2) rows.push(items.slice(i, i + 2))
     return { section, rows }
